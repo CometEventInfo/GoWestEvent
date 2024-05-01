@@ -28,8 +28,10 @@
 
 <h1 class="center-me">Mayple Island Update/19th Anniversary Update</h1>
 <br></br>
-<input type="text" id="myInput" onkeyup="mySearch()" placeholder="Search event Name Or just Scroll through" title="Type in a name">
-
+<!--
+  <input type="text" id="myInput" onkeyup="mySearch()" placeholder="Search event Name Or just Scroll through" title="Type in a name">
+-->
+  
 <ul id="myUL">
 
 <button class="accordion"><li><a href="#" class="center-me">Dailies / Weeklies to do</a></li></button>
@@ -579,12 +581,12 @@
     document.documentElement.scrollTop = 0;
     }
 
-
+    /*
     //Search Bar function
     function mySearch() {
     var input, filter, ul, li, a, i, txtValue, acc,  panel;
 
-    /* Preparation for closing all display!
+     Preparation for closing all display!
     var acc = document.getElementsByClassName("accordion");
 
     for (i = 0; i < acc.length; i++) {
@@ -594,7 +596,7 @@
         if (panel.style.display === "block") {
             panel.style.display = "none";
 
-    */
+    
     acc = document.getElementsByClassName("accordion");
 
     input = document.getElementById("myInput");
@@ -618,7 +620,7 @@
         }
     }
 }
-
+*/
 
 var myaudio = document.getElementById("audioID");
 myaudio.volume = 0.1; 
