@@ -23,6 +23,10 @@ audio {
     display: block;
 }
 
+.bold-me{
+  font-weight: bold;
+}
+
 /*For the Link / Icon bar*/
 .icon-bar {
     margin: 0px auto;
