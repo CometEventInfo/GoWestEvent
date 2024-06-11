@@ -1,271 +1,271 @@
 body {
-    background-color: dodgerblue;
-    margin:0;
+  background-color: dodgerblue;
+  margin:0;
 }
 
 p {
-  font-size: 20px;
+font-size: 20px;
 }
 
 h1{
-  color: white;
+color: #FFD700;
 }
 
 audio {
-  background-color: blue;
-  border-radius: 25px;
+background-color: blue;
+border-radius: 25px;
 }
 
 /*FOR CENTERING THINGS*/
 .center-me {
-    text-align: center;
-    margin: 0px auto;
-    display: block;
+  text-align: center;
+  margin: 0px auto;
+  display: block;
 }
 
 .bold-me{
-  font-weight: bold;
+font-weight: bold;
 }
 
 /*For the Link / Icon bar*/
 .icon-bar {
-    margin: 0px auto;
-    display: block;
-    width: 60%;
-    background-color: #555;
-    overflow: auto;
-    border: solid 3px white;
+  margin: 0px auto;
+  display: block;
+  width: 60%;
+  background-color: #555;
+  overflow: auto;
+  border: solid 3px #FFD700;
 }
 
 .icon-bar a {
-    float: left;
-    width: 20%;
-    text-align: center;
-    padding: 12px 0;
-    transition: all 0.3s ease;
-    color: white;
-    font-size: 36px;
+  float: left;
+  width: 20%;
+  text-align: center;
+  padding: 12px 0;
+  transition: all 0.3s ease;
+  color: #FFD700;
+  font-size: 36px;
 }
 
 .icon-bar a:hover {
-    background-color: peachpuff;
+  background-color: #662d91;
 }
 
 .activeLink {
-    background-color: peachpuff;
+  background-color: #662d91;
 }
 
 /*For the Accordian*/
 .accordion {
-    margin: 0px auto;
-    display: block;
+  margin: 0px auto;
+  display: block;
 
-    
-    background-color: peachpuff;
-    border: solid 3px white;
-
-    color: white;
-    cursor: pointer;
-    padding: 18px;
-    width: 80%;
-
-    text-align: left;
-    outline: none;
-    font-size: 15px;
-    transition: 0.1s;
-  }
   
-  .activeAcc {
-    border: solid 3px white;
-  }
+  background-color: #662d91;
+  border: solid 3px #FFD700;
 
-  .accordion:hover {
-    background-color: paleturquoise; 
-    /*border: solid 3px white; Shen Request*/
-  }
-  
-  .panel {
-    margin: 0px auto;
-    display: block;
+  color: white;
+  cursor: pointer;
+  padding: 18px;
+  width: 80%;
 
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+  transition: 0.1s;
+}
 
-    border: solid 5px white;
-    display: none;
-    width: 79%;
-    background-color: pink;
-    overflow: hidden;
-  }
+.activeAcc {
+  border: solid 3px #FFD700;
+}
+
+.accordion:hover {
+  background-color: #EE82EE; 
+  /*border: solid 3px white; Shen Request*/
+}
+
+.panel {
+  margin: 0px auto;
+  display: block;
 
 
-  /*Slide Show + Gallery Combo*/
-  * {
-    box-sizing: border-box;
-  }
-  
-  img {
-    vertical-align: middle;
-    width: 50%;
-    height: 50%;
-  }
-  
-  /* Position the image container (needed to position the left and right arrows) */
-  .container {
-    background-color: pink;
-    position: relative;
+  border: solid 5px #FFD700;
+  display: none;
+  width: 79%;
+  background-color: #B2FFFF;
+  overflow: hidden;
+}
 
-    border: solid 3px white;
-    text-align: center;
-    margin: 0px auto;
-    display: block;
 
-    width: 80%;
-    height: 80%;
-  }
-  
-  /* Hide the images by default */
-  .mySlides1 {
-    display: none;
-  }
+/*Slide Show + Gallery Combo*/
+* {
+  box-sizing: border-box;
+}
 
-  .mySlides2 {
-    display: none;
-  }
-  
-  /* Add a pointer when hovering over the thumbnail images */
-  .cursor {
-    cursor: pointer;
-  }
-  
-  /* Next & previous buttons */
-  .prev,
-  .next {
-    background-color: dodgerblue;
-    cursor: pointer;
-    position: absolute;
-    top: 40%;
-    width: auto;
-    padding: 16px;
-    margin-top: -50px;
-    color: white;
-    font-weight: bold;
-    font-size: 20px;
-    border-radius: 0 3px 3px 0;
-    user-select: none;
-    -webkit-user-select: none;
-  }
-  
-  /* Position the "next button" to the right */
-  .next {
-    right: 0;
-    border-radius: 3px 0 0 3px;
-  }
-  
-  /* On hover, add a black background color with a little bit see-through */
-  .prev:hover,
-  .next:hover {
-    background-color: rgba(0, 0, 0, 0.8);
-  }
-  
-  /* Number text (1/3 etc) */
-  .numbertext {
-    color: black;
-    font-size: 12px;
-    padding: 8px 12px;
-    position: absolute;
-    top: 0;
-  }
-  
-  /* Container for image text */
-  .caption-container {
-    text-align: center;
-    background-color: dodgerblue;
-    border: solid 3px white;
-    padding: 2px 16px;
-    color: black;
-    font-weight: bolder;
-    font-size: 24px;
-  }
-  
-  .row{
-    border: solid 3px white;
-    background-color: dodgerblue;
-  }
+img {
+  vertical-align: middle;
+  width: 50%;
+  height: 50%;
+}
 
-  .row:after {
-    content: "";
-    display: table;
-    clear: both;
-  }
-  
-  /* Six columns side by side */
-  .column {
-    float: left;
-    width: 16.66%;
-  }
-  
-  /* Add a transparency effect for thumnbail images */
-  .demo {
-    opacity: 0.6;
-  }
-  
-  .active,
-  .demo:hover {
-    opacity: 1;
-  }
+/* Position the image container (needed to position the left and right arrows) */
+.container {
+  background-color: pink;
+  position: relative;
 
-  /* Back To Top Button */
-  #myBtn {
-    display: none;
-    position: fixed;
-    bottom: 20px;
-    right: 30px;
-    z-index: 99;
-    font-size: 18px;
-    border: solid 3px white;
-    outline: none;
-    background-color: gold;
-    color: white;
-    cursor: pointer;
-    padding: 15px;
-    border-radius: 4px;
-  }
-  
-  #myBtn:hover {
-    background-color: #555;
-  }
+  border: solid 3px #FFD700;
+  text-align: center;
+  margin: 0px auto;
+  display: block;
 
-  /* Event Search */
-  #myInput {
-    margin: 0px auto;
-    display: block;
+  width: 80%;
+  height: 80%;
+}
 
-    background-image: url('/css/searchicon.png');
-    background-position: 10px 12px;
-    background-repeat: no-repeat;
-    width: 80%;
-    font-size: 16px;
-    padding: 12px 20px 12px 40px;
-    border: 1px solid #ddd;
-    margin-bottom: 12px;
-  }
-  
-  #myUL {
-    list-style-type: none;
-    padding: 0;
-    margin: 0;
-  }
-  
-  #myUL li a {
-    margin-top: -1px; /* Prevent double borders */
+/* Hide the images by default */
+.mySlides1 {
+  display: none;
+}
 
-    padding: 12px;
-    text-decoration: none;
-    font-size: 30px;
-    
-    color: black;
-    display: block
-  }
+.mySlides2 {
+  display: none;
+}
+
+/* Add a pointer when hovering over the thumbnail images */
+.cursor {
+  cursor: pointer;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+  background-color: #1F75FE;
+  cursor: pointer;
+  position: absolute;
+  top: 40%;
+  width: auto;
+  padding: 16px;
+  margin-top: -50px;
+  color: #FFD700;
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: black;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* Container for image text */
+.caption-container {
+  text-align: center;
+  background-color: #1F75FE;
+  border: solid 3px #FFD700;
+  padding: 2px 16px;
+  color: black;
+  font-weight: bolder;
+  font-size: 24px;
+}
+
+.row{
+  border: solid 3px #FFD700;
+  background-color: #1F75FE;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Six columns side by side */
+.column {
+  float: left;
+  width: 16.66%;
+}
+
+/* Add a transparency effect for thumnbail images */
+.demo {
+  opacity: 0.6;
+}
+
+.active,
+.demo:hover {
+  opacity: 1;
+}
+
+/* Back To Top Button */
+#myBtn {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  z-index: 99;
+  font-size: 18px;
+  border: solid 3px #FFD700;
+  outline: none;
+  background-color: gold;
+  color: white;
+  cursor: pointer;
+  padding: 15px;
+  border-radius: 4px;
+}
+
+#myBtn:hover {
+  background-color: #555;
+}
+
+/* Event Search */
+#myInput {
+  margin: 0px auto;
+  display: block;
+
+  background-image: url('/css/searchicon.png');
+  background-position: 10px 12px;
+  background-repeat: no-repeat;
+  width: 80%;
+  font-size: 16px;
+  padding: 12px 20px 12px 40px;
+  border: 1px solid #ddd;
+  margin-bottom: 12px;
+}
+
+#myUL {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+#myUL li a {
+  margin-top: -1px; /* Prevent double borders */
+
+  padding: 12px;
+  text-decoration: none;
+  font-size: 30px;
   
-  #myUL li a:hover:not(.header) {
-    background-color: paleturquoise;
-  }
+  color: black;
+  display: block
+}
+
+#myUL li a:hover:not(.header) {
+  background-color: #EE82EE;
+}
