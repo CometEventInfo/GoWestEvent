@@ -26,6 +26,28 @@
   <audio id="audioID" autoplay loop controls> <source src="CometEventsImages/MaypleIsland/maplestory19thAnn.mp3"  type="audio/mp3"></audio>
 </div>
 
+<div class="canvas">
+  <div class="butterfly">
+    <div class="butterfly-wing-1"></div>
+    <div class="butterfly-body"></div>
+    <div class="butterfly-wing-2"></div>
+  </div>
+</div>
+<div class="canvas">
+  <div class="butterfly2">
+    <div class="butterfly-wing-1"></div>
+    <div class="butterfly-body"></div>
+    <div class="butterfly-wing-2"></div>
+  </div>
+</div>
+<div class="canvas">
+  <div class="butterfly3">
+    <div class="butterfly-wing-1"></div>
+    <div class="butterfly-body"></div>
+    <div class="butterfly-wing-2"></div>
+  </div>
+</div>
+
 <h1 class="center-me"><span class="bold-me">GO WEST BECAUSE WERE BEST</span></h1>
 <br></br>
 <!--
@@ -419,9 +441,61 @@
   <img class="center-me" src="CometEventsImages/MaypleIsland/SunnySunday.png">
 
 </div>
+
+
+
 </ul>
 
+
+
+
+
+
+
+
+
+
+
+
+
 <script>
+
+
+var butterfly = document.querySelector('.butterfly');
+var butterfly2 = document.querySelector('.butterfly2');
+var butterfly3 = document.querySelector('.butterfly3');
+
+function getRandomArbitrary(min, max) {
+  return Math.random() * (max - min) + min;
+}
+
+setInterval(function() {
+  var numberX = Math.floor(getRandomArbitrary(0, 800));
+  var numberY = Math.floor(getRandomArbitrary(0, 500));
+  
+butterfly.style.setProperty('--random-y', numberY +'px');
+butterfly.style.setProperty('--random-x', numberX +'px');
+}, 2000);
+
+setInterval(function() {
+  var numberX = Math.floor(getRandomArbitrary(0, 800));
+  var numberY = Math.floor(getRandomArbitrary(0, 500));
+  
+butterfly2.style.setProperty('--random-y', numberY +'px');
+butterfly2.style.setProperty('--random-x', numberX +'px');
+}, 2000);
+
+setInterval(function() {
+  var numberX = Math.floor(getRandomArbitrary(0, 800));
+  var numberY = Math.floor(getRandomArbitrary(0, 500));
+  
+butterfly3.style.setProperty('--random-y', numberY +'px');
+butterfly3.style.setProperty('--random-x', numberX +'px');
+}, 2000);
+
+
+
+
 
     //For The Accordian
     var acc = document.getElementsByClassName("accordion");
@@ -632,4 +706,4 @@ myaudio.volume = 0.1;
 
 </script>
 </body>
-</html> 
+</html>
