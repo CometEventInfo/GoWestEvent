@@ -1,5 +1,5 @@
 body {
-  background-color: dodgerblue;
+  background-color: black;
   margin:0;
 }
 
@@ -14,6 +14,20 @@ color: #FFD700;
 audio {
 background-color: blue;
 border-radius: 25px;
+}
+
+.fire {
+  text-align: center;
+  margin: 0px auto;
+  display: block;
+  animation: burn 1.5s linear infinite alternate;
+}
+
+@keyframes burn {
+  from { text-shadow: -.1em 0 .3em #fefcc9, .1em -.1em .3em #feec85, -.2em -.2em .4em #ffae34, .2em -.3em .3em #ec760c, -.2em -.4em .4em #cd4606, .1em -.5em .7em #973716, .1em -.7em .7em #451b0e; }
+  45%  { text-shadow: .1em -.2em .5em #fefcc9, .15em 0 .4em #feec85, -.1em -.25em .5em #ffae34, .15em -.45em .5em #ec760c, -.1em -.5em .6em #cd4606, 0 -.8em .6em #973716, .2em -1em .8em #451b0e; }
+  70%  { text-shadow: -.1em 0 .3em #fefcc9, .1em -.1em .3em #feec85, -.2em -.2em .6em #ffae34, .2em -.3em .4em #ec760c, -.2em -.4em .7em #cd4606, .1em -.5em .7em #973716, .1em -.7em .9em #451b0e; }
+  to   { text-shadow: -.1em -.2em .6em #fefcc9, -.15em 0 .6em #feec85, .1em -.25em .6em #ffae34, -.15em -.45em .5em #ec760c, .1em -.5em .6em #cd4606, 0 -.8em .6em #973716, -.2em -1em .8em #451b0e; }
 }
 
 /*FOR CENTERING THINGS*/
@@ -34,7 +48,7 @@ font-weight: bold;
   width: 60%;
   background-color: #555;
   overflow: auto;
-  border: solid 3px #FFD700;
+  border: solid 3px darkslategray;
 }
 
 .icon-bar a {
@@ -43,7 +57,7 @@ font-weight: bold;
   text-align: center;
   padding: 12px 0;
   transition: all 0.3s ease;
-  color: #FFD700;
+  color: darkslategray;
   font-size: 36px;
 }
 
@@ -61,8 +75,8 @@ font-weight: bold;
   display: block;
 
   
-  background-color: #662d91;
-  border: solid 3px #FFD700;
+  background-color: firebrick;
+  border: solid 3px darkslategray;
 
   color: white;
   cursor: pointer;
@@ -76,11 +90,11 @@ font-weight: bold;
 }
 
 .activeAcc {
-  border: solid 3px #FFD700;
+  border: solid 3px darkslategray;
 }
 
 .accordion:hover {
-  background-color: #EE82EE; 
+  background-color: darkred; 
   /*border: solid 3px white; Shen Request*/
 }
 
@@ -89,10 +103,10 @@ font-weight: bold;
   display: block;
 
 
-  border: solid 5px #FFD700;
+  border: solid 5px darkslategray;
   display: none;
   width: 79%;
-  background-color: #B2FFFF;
+  background-color: lightcoral;
   overflow: hidden;
 }
 
@@ -106,14 +120,16 @@ img {
   vertical-align: middle;
   width: 50%;
   height: 50%;
+  border: solid 4px black;
+  border-radius: 25px;
 }
 
 /* Position the image container (needed to position the left and right arrows) */
 .container {
-  background-color: pink;
+  background-color: darkslategray;
   position: relative;
 
-  border: solid 3px #FFD700;
+  border: solid 8px black;
   text-align: center;
   margin: 0px auto;
   display: block;
@@ -139,14 +155,14 @@ img {
 /* Next & previous buttons */
 .prev,
 .next {
-  background-color: #1F75FE;
+  background-color: crimson;
   cursor: pointer;
   position: absolute;
   top: 40%;
   width: auto;
   padding: 16px;
   margin-top: -50px;
-  color: #FFD700;
+  color: darkslategray;
   font-weight: bold;
   font-size: 20px;
   border-radius: 0 3px 3px 0;
@@ -178,8 +194,8 @@ img {
 /* Container for image text */
 .caption-container {
   text-align: center;
-  background-color: #1F75FE;
-  border: solid 3px #FFD700;
+  background-color: crimson;
+  border: solid 3px darkslategray;
   padding: 2px 16px;
   color: black;
   font-weight: bolder;
@@ -187,8 +203,8 @@ img {
 }
 
 .row{
-  border: solid 3px #FFD700;
-  background-color: #1F75FE;
+  border: solid 3px darkslategray;
+  background-color: crimson;
 }
 
 .row:after {
@@ -221,7 +237,7 @@ img {
   right: 30px;
   z-index: 99;
   font-size: 18px;
-  border: solid 3px #FFD700;
+  border: solid 3px darkslategray;
   outline: none;
   background-color: gold;
   color: white;
@@ -267,9 +283,12 @@ img {
 }
 
 #myUL li a:hover:not(.header) {
-  background-color: #EE82EE;
+  background-color: darkred;
 }
 
+.no-border{
+  border: none;
+}
 
 
 
